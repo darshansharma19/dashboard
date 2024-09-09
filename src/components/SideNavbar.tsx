@@ -4,20 +4,23 @@
 import { useState } from "react";
 import { Nav } from "./ui/nav";
 
-type Props = {};
-
 import {
-  ShoppingCart,
   LayoutDashboard,
-  UsersRound,
-  Settings,
+  PlusCircle,
+  Users,
+  Code,
+  UserCheck,
+  Briefcase,
+  Building,
+  MapPin,
+  GitBranch,
+  Lock,
   ChevronRight,
-  Monitor,
-  BarChart
 } from "lucide-react";
 import { Button } from "./ui/button";
-
 import { useWindowWidth } from "@react-hook/window-size";
+
+type Props = {};
 
 export default function SideNavbar({}: Props) {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -30,13 +33,13 @@ export default function SideNavbar({}: Props) {
   }
 
   return (
-    <div className="relative min-w-[80px] border-r pr-6  pb-10 pt-24 ">
+    <div className="relative min-w-[80px] border-r pr-6 pb-10 pt-24">
       {!mobileWidth && (
         <div className="absolute right-[-20px] top-7">
           <Button
             onClick={toggleSidebar}
             variant="secondary"
-            className=" rounded-full p-2"
+            className="rounded-full p-2"
           >
             <ChevronRight />
           </Button>
@@ -49,61 +52,61 @@ export default function SideNavbar({}: Props) {
             title: "Dashboard",
             href: "/",
             icon: LayoutDashboard,
-            variant: "default"
-          },
-          {
-            title: "Company",
-            href: "/company",
-            icon: UsersRound,
-            variant: "ghost"
-          },
-          {
-            title: "Tech Team",
-            href: "/techteam",
-            icon: Monitor,
-            variant: "ghost"
-          },
-          {
-            title: "Department",
-            href: "/department",
-            icon: BarChart,
-            variant: "ghost"
-          },
-          {
-            title: "Building",
-            href: "/building",
-            icon: BarChart,
-            variant: "ghost"
+            variant: "default",
           },
           {
             title: "Add Company",
             href: "/addcompany",
-            icon: BarChart,
-            variant: "ghost"
+            icon: PlusCircle, // Changed to PlusCircle
+            variant: "ghost",
           },
           {
-            title: "Branch",
-            href: "/branch",
-            icon: BarChart,
-            variant: "ghost"
+            title: "Teams",
+            href: "/teams",
+            icon: Users, // Changed to Users
+            variant: "ghost",
           },
           {
-            title: "Location",
-            href: "/location",
-            icon: BarChart,
-            variant: "ghost"
+            title: "Tech Team",
+            href: "/techteam",
+            icon: Code, // Changed to Code
+            variant: "ghost",
           },
           {
             title: "Non Tech Team",
             href: "/nontechteam",
-            icon: BarChart,
-            variant: "ghost"
+            icon: UserCheck, // Changed to UserCheck
+            variant: "ghost",
+          },
+          {
+            title: "Department",
+            href: "/department",
+            icon: Briefcase, // Changed to Briefcase
+            variant: "ghost",
+          },
+          {
+            title: "Building",
+            href: "/building",
+            icon: Building, // Changed to Building
+            variant: "ghost",
+          },
+          {
+            title: "Branch",
+            href: "/branch",
+            icon: GitBranch, // Changed to MapPin
+            variant: "ghost",
+          },
+          {
+            title: "Location",
+            href: "/location",
+            icon: MapPin, // Changed to MapPin (same as Branch, you can change if needed)
+            variant: "ghost",
           },
           {
             title: "Role and Permission",
             href: "/roleandpermission",
-            icon: BarChart,
-            variant: "ghost"
+            icon: Lock, // Changed to Lock
+            variant: "ghost",
           },
         ]}
       />
