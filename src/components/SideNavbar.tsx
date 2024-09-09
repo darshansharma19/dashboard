@@ -53,19 +53,55 @@ export default function SideNavbar({}: Props) {
           },
           {
             title: "Company",
-            href: "/users",
+            href: "/company",
             icon: UsersRound,
             variant: "ghost"
           },
           {
             title: "Tech Team",
-            href: "/users",
+            href: "/techteam",
             icon: Monitor,
             variant: "ghost"
           },
           {
+            title: "Department",
+            href: "/department",
+            icon: BarChart,
+            variant: "ghost"
+          },
+          {
+            title: "Building",
+            href: "/building",
+            icon: BarChart,
+            variant: "ghost"
+          },
+          {
+            title: "Add Company",
+            href: "/addcompany",
+            icon: BarChart,
+            variant: "ghost"
+          },
+          {
+            title: "Branch",
+            href: "/branch",
+            icon: BarChart,
+            variant: "ghost"
+          },
+          {
+            title: "Location",
+            href: "/location",
+            icon: BarChart,
+            variant: "ghost"
+          },
+          {
             title: "Non Tech Team",
-            href: "/users",
+            href: "/nontechteam",
+            icon: BarChart,
+            variant: "ghost"
+          },
+          {
+            title: "Role and Permission",
+            href: "/roleandpermission",
             icon: BarChart,
             variant: "ghost"
           },
