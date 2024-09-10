@@ -2,6 +2,7 @@
 
 import PageTitle from "@/components/PageTitle";
 import Image from "next/image";
+import Header from "@/components/Header";
 import {
   DollarSign,
   Users,
@@ -91,6 +92,7 @@ const uesrSalesData: SalesProps[] = [
 export default function Home() {
   return (
     <div className="flex flex-col gap-5  w-full">
+      <Header />
       {/* LOCATION PAGE */}
       <section>
         <div className="grid grid-cols-[70%_30%] gap-4">

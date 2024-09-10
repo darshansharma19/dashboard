@@ -2,6 +2,7 @@
 
 import PageTitle from "@/components/PageTitle";
 import Image from "next/image";
+import Header from "@/components/Header";
 import {
   DollarSign,
   Users,
@@ -92,6 +93,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-5  w-full">
       {/* Building PAGE */}
+      <Header />
       <section>
       <div className="flex justify-between items-center mb-4">
             <div>

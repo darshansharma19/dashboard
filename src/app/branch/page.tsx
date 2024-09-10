@@ -1,5 +1,5 @@
 /** @format */
-
+import Header from "@/components/Header";
 import PageTitle from "@/components/PageTitle";
 import Image from "next/image";
 import {
@@ -92,6 +92,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-5  w-full">
       {/* BRANCHES PAGE */}
+      <Header />
       <section>
         <div className="grid grid-cols-[45%_55%] gap-4">
           {/* Left Column */}
